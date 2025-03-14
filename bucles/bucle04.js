@@ -4,13 +4,13 @@ const read = require('../leer.js');
 
 //Dado un número indefinido de números enteros positivos y finalizando la carga con un 0 o
 //un negativo, obtener el siguiente informe:
-//Cantidad de valores procesados: XXX
-//Sumatoria de los valores: XXX
-//Media de los valores: XXX
-//Valor mayor: XXX
-//Valor menor: XXX
-//Cantidad de valores pares: XXX
-//Cantidad de valores impares: XXX
+//Cantidad de valores procesados: XXX cont
+//Sumatoria de los valores: XXX sumatorio
+//Media de los valores: XXX media
+//Valor mayor: XXX mayor
+//Valor menor: XXX menor
+//Cantidad de valores pares: XXX pares
+//Cantidad de valores impares: XXX impares
 
 
 let num = Number(read("Ingrese número: "));
