@@ -17,7 +17,7 @@ let num = Number(read("Ingrese número: "));
 // definimos el valor mayor, el valor menor y el contador de veces que introducimos un numero
 // y acualizamos mayor y menor al primer num que introducimos
 let mayor = num, menor = num
-let cont = 0;
+let cont = 0, sumatorio, media, pares, impares;
 
 while (num > 0){
     // proceso
