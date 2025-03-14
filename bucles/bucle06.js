@@ -9,13 +9,12 @@ const read = require('../leer.js');
 //Para generar un número aleatorio entre 0 y 100:
 let numero = Math.floor(Math.random() * 101);
 // enseño el numero aleatorio para saber cual es
-console.log(numero);
+console.log(`                El numero aleatorio es: ${numero}`);
 
 let num = Number(read("He generado un número al azar, Ingrese un número para adivinarlo: "));
 
 while (num != numero){
     // proceso
-    
     if (num > numero) {
         console.log(`El numero ingresado ${num} es mayor que el numero pensado`);
     } 
