@@ -19,7 +19,7 @@ let resul = 0;
 
 for (let i = 1; i <= num; i++){
     process.stdout.write(`${i},`);
-    resul = resul + i;
+    resul += i;
 }
 console.log(`La suma de la triangulación es: ${resul}`);
 console.log("FINAL");
