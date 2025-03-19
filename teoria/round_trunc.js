@@ -1,0 +1,25 @@
+let numPos1 = 3.8;
+let numPos2 = 3.2;
+let numNeg1 = -3.8;
+let numNeg2 = -3.2;
+
+console.log(`Math.round(${numPos1}): ${Math.round(numPos1)}`);
+console.log(`Math.round(${numPos2}): ${Math.round(numPos2)}`);
+console.log(`Math.round(${numNeg1}): ${Math.round(numNeg1)}`);
+console.log(`Math.round(${numNeg2}): ${Math.round(numNeg2)}`);
+console.log();
+console.log(`Math.floor(${numPos1}): ${Math.floor(numPos1)}`);
+console.log(`Math.floor(${numPos2}): ${Math.floor(numPos2)}`);
+console.log(`Math.floor(${numNeg1}): ${Math.floor(numNeg1)}`);
+console.log(`Math.floor(${numNeg2}): ${Math.floor(numNeg2)}`);
+console.log();
+console.log(`Math.ceil(${numPos1}): ${Math.ceil(numPos1)}`);
+console.log(`Math.ceil(${numPos2}): ${Math.ceil(numPos2)}`);
+console.log(`Math.ceil(${numNeg1}): ${Math.ceil(numNeg1)}`);
+console.log(`Math.ceil(${numNeg2}): ${Math.ceil(numNeg2)}`);
+console.log();
+console.log(`Math.trunc(${numPos1}): ${Math.trunc(numPos1)}`);
+console.log(`Math.trunc(${numPos2}): ${Math.trunc(numPos2)}`);
+console.log(`Math.trunc(${numNeg1}): ${Math.trunc(numNeg1)}`);
+console.log(`Math.trunc(${numNeg2}): ${Math.trunc(numNeg2)}`);
+console.log();

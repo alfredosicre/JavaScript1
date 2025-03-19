@@ -17,9 +17,9 @@ if (num > 2){
         }
     }
 }
-if(esprimo){ // si esprimo = true
+if(esprimo){ // si esprimo = true es un numero primo
     console.log(`El número ${num} es un número primo`); // si es primo
-}else{ // si esprimo = false
-    console.log(`El número ${num} no es un número primo`); // si es primo
+}else{ // si esprimo = false no es un numero primo
+    console.log(`El número ${num} no es un número primo`); // no es primo
 }
 console.log("FINAL");
