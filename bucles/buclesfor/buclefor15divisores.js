@@ -9,10 +9,10 @@ let num = Number(read("Ingrese número entero positivo: "));
 
 if (num > 0){
 
-    for (let i = 1; i <= num ; i++) {
+    for (let i = 1; i <= num / 2 ; i++) { // num se divide entre 2 porque no existe un divisor a cero a partir de la mitad del numero
         
-        if(num % i == 0){ // comprobamos que numero es divisor - num/i=0
-        process.stdout.write(`${i},`);
+        if(num % i == 0){ // comprobamos que numero es divisor (num/i=0)
+        process.stdout.write(`${i}  `);
         }
     }
 }

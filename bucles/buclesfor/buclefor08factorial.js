@@ -13,7 +13,7 @@ if(num01 >= 0){
     for (let i = 1; i <= num01; i++){
 
         if (num01 > 0){
-            factorial = factorial * i;
+            factorial *= i; // factorial = factorial * i
         }
     }
 }else{

@@ -13,9 +13,9 @@ for (let i = 1; i <= num; i++){
 
     num01 = Number(read(`Ingrese ${i} número: `));
     if (num01 >= 0){
-        positivo = positivo + 1;
+        positivo++; // sumamos 1 a positivo
     }else{
-        negativo = negativo + 1;
+        negativo++; // sumamos 1 a negativo
     }
 }
 console.log("Cantidad de positivos: " + positivo);
