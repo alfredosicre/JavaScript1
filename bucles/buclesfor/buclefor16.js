@@ -23,3 +23,4 @@ if(esprimo){ // si esprimo = true
     console.log(`El número ${num} no es un número primo`); // no es primo
 }
 console.log("FINAL");
+console.log("FUNCIONA")
