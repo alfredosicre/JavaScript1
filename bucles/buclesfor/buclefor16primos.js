@@ -10,7 +10,7 @@ let esprimo = true;
 
 if (num > 2){
 
-    for (let i = 2; i <= Math.sqrt(num) && esprimo; i++) {
+    for (let i = 3; i <= Math.sqrt(num) && esprimo; i+=2) {
         // Si num es divisible por i, no es primo
         if (num % i == 0){ // no es primo porque es divisible por i
             esprimo = false;
