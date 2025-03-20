@@ -34,11 +34,11 @@ if(mes == 2){
             numero = 30;
     }
 }
-
-for(let i = 1; i < mes; i++){
+resto = numero - dia;
+for(let i = (mes+1); i <= 12; i++){
         resto = (resto + numero);
 }
-resto = resto + dia;
+
 console.log();
 process.stdout.write(`La fecha introducida es: ${dia}/${mes}/${anio}`);
 console.log(" Los dias transcurridos del año: " + anio + " son: "  + resto);
