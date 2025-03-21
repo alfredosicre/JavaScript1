@@ -2,17 +2,23 @@
 // const es una constante que no se puede variar
 const read = require('/home/node/leer.js');
 
-// Solicite al usuario dos fechas (día1, mes1, año1, día2, mes2, año2), indicar el tiempo
-// transcurrido en días entre ambas, sin tener en cuenta años bisiestos.
-
-
+//Escriba un programa que nos calcule el cambio que debe dar la caja de un supermercado:
+//Dado un precio y una cantidad de dinero, el programa nos dirá cuántas monedas deben
+//darse como cambio de tal forma que el número total de monedas sea mínimo.
+main();
 
 let correcto = true;
-main();
-function main(){
-        
-do{  
+let precio = 0, dinero = 0, cambio = 0.0;
 
+function main(){
+
+do{  
+        precio = Number(read("Ingrese precio: "));
+        dinero = Number(read("Ingrese dinero pagado: "));
+        // calculo cuantos euros le tengo que devolver
+        cambio = dinero - precio; // total euros y centimos que debo devolver
+        cambio = cambio * 100; // veo los centimos totales que necesito
+        
 
 } while (correcto);
 
