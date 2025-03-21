@@ -20,13 +20,14 @@ if(precio == 0){
         correcto = false; // si salir = 1 sale del bucle
         }else{
         calcularCambio(precio, dinero);
+        console.log()
         }
 } while (correcto);
     
 }
 
 function calcularCambio(precio, dinero) {
-        // Convertimos el precio y la cantidad de dinero a céntimos para evitar problemas de precisión con decimales
+        // Convertimos el precio y la cantidad de dinero a céntimos.
         let cambio = Math.round((dinero - precio) * 100); // Multiplicamos por 100 para trabajar con céntimos
         let billetesYMonedas = [50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1]; // Billetes y monedas disponibles en céntimos
         let cantidadBilletesYMonedas = []; // Array para almacenar el número de cada billete o moneda a devolver
@@ -41,6 +42,7 @@ function calcularCambio(precio, dinero) {
         for (let i = 0; i < billetesYMonedas.length; i++) {
             let dinero = Math.floor(cambio / billetesYMonedas[i]); // Cuántos billetes o monedas de este tipo podemos dar
             if (dinero > 0) {
+                //condición ? expresiónSiVerdadera : expresiónSiFalsa;
                 let tipo = billetesYMonedas[i] >= 500 ? `billetes de ${billetesYMonedas[i] / 100}€` : `monedas de ${billetesYMonedas[i] / 100}€`;
                 cantidadBilletesYMonedas.push(`${dinero} ${tipo}`); // Guardamos la cantidad de billetes o monedas
                 cambio -= dinero * billetesYMonedas[i]; // Restamos el valor del cambio
