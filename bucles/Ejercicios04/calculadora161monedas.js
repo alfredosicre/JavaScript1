@@ -7,9 +7,9 @@ const read = require('/home/node/leer.js');
 //darse como cambio de tal forma que el número total de monedas sea mínimo.
 
 main();
-    
 let correcto = true, salir = 0;
 let precio = 0, dinero = 0, cambio = 0.0;
+
 function main(){
     
 do{  
@@ -26,7 +26,7 @@ if(salir = 1){
 
 function calcularCambio(precio, cantidadDinero) {
         // Convertimos el precio y la cantidad de dinero a céntimos para evitar problemas de precisión con decimales
-        let dinero = Math.round((cantidadDinero - precio) * 100); // Multiplicamos por 100 para trabajar con céntimos
+        let cambio = Math.round((cantidadDinero - precio) * 100); // Multiplicamos por 100 para trabajar con céntimos
         let billetesYMonedas = [50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1]; // Billetes y monedas disponibles en céntimos
         let cantidadBilletesYMonedas = []; // Array para almacenar el número de cada billete o moneda a devolver
     
