@@ -13,7 +13,11 @@ if(num01 >= 0){
     for (let i = 1; i <= num01; i++){
 
         if (num01 > 0){
+<<<<<<< HEAD
             factorial = factorial * i;
+=======
+            factorial *= i; // factorial = factorial * i
+>>>>>>> 4fe10bdc00cedf40e5a3b44c9504285a0566c880
         }
     }
 }else{

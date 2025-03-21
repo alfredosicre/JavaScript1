@@ -11,9 +11,15 @@ let desde = Number(read("Ingrese número desde: "));
 let hasta = Number(read("Ingrese número hasta: ")); 
 
 if (desde % 2 != 0){
+<<<<<<< HEAD
     desde ++;
 }
 for (let i = desde; i <= hasta; i+=2){
+=======
+    desde ++; // sumamos 1 a desde si es impar para que comience el for por par
+}
+for (let i = desde; i <= hasta; i+=2){ // a i le sumamos 2 (i+=2) para que vaya de par en par
+>>>>>>> 4fe10bdc00cedf40e5a3b44c9504285a0566c880
     process.stdout.write(`${i},`);
 }
 console.log("FINAL");

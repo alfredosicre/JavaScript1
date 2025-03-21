@@ -18,8 +18,15 @@ let num = Number(read("Ingrese número a calcular su resultado triangular: "));
 let resul = 0;
 
 for (let i = 1; i <= num; i++){
+<<<<<<< HEAD
     process.stdout.write(`${i},`);
     resul += i;
+=======
+    resul += i;
+    process.stdout.write(`${i}-${resul}`);
+    console.log()
+    
+>>>>>>> 4fe10bdc00cedf40e5a3b44c9504285a0566c880
 }
 console.log(`La suma de la triangulación es: ${resul}`);
 console.log("FINAL");

@@ -13,9 +13,15 @@ for (let i = 1; i <= num; i++){
 
     num01 = Number(read(`Ingrese ${i} número: `));
     if (num01 >= 0){
+<<<<<<< HEAD
         positivo = positivo + 1;
     }else{
         negativo = negativo + 1;
+=======
+        positivo++; // sumamos 1 a positivo
+    }else{
+        negativo++; // sumamos 1 a negativo
+>>>>>>> 4fe10bdc00cedf40e5a3b44c9504285a0566c880
     }
 }
 console.log("Cantidad de positivos: " + positivo);
