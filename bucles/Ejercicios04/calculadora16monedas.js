@@ -8,7 +8,7 @@ const read = require('/home/node/leer.js');
 
 main();
 
-function main(){
+function main(){ // ------------------------------------------------------
 let correcto = true;
 let precio = 0, dinero = 0, cambio = 0.0;
     
@@ -22,11 +22,10 @@ if(precio == 0){
         calcularCambio(precio, dinero);
         console.log()
         }
-} while (correcto);
-    
-}
+} while (correcto);   
+} //------------------------------------------------------------------------
 
-function calcularCambio(precio, dinero) {
+function calcularCambio(precio, dinero) { // ------------------------------------------------------------------------------------------------------------
         // Convertimos el precio y la cantidad de dinero a céntimos.
         let cambio = Math.round((dinero - precio) * 100); // Multiplicamos por 100 para trabajar con céntimos
         let billetesYMonedas = [50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1]; // Billetes y monedas disponibles en céntimos
@@ -39,8 +38,10 @@ function calcularCambio(precio, dinero) {
         }
     
         // Recorremos los billetes y monedas disponibles para devolver el cambio
-        for (let i = 0; i < billetesYMonedas.length; i++) {
-            let dinero = Math.floor(cambio / billetesYMonedas[i]); // Cuántos billetes o monedas de este tipo podemos dar
+        for (let i = 0; i < billetesYMonedas.length; i++) { // desde i=1 hasta que i<numero total de elementos del array [billetesYMonedas] que es 15 en este caso.
+
+            // Cuántos billetes o monedas de este tipo podemos dar. Redondea el número hacia abajo al entero más cercano (Math.floor).
+            let dinero = Math.floor(cambio / billetesYMonedas[i]); 
             if (dinero > 0) {
                 //condición ? expresiónSiVerdadera : expresiónSiFalsa;
                 let tipo = billetesYMonedas[i] >= 500 ? `billetes de ${billetesYMonedas[i] / 100}€` : `monedas de ${billetesYMonedas[i] / 100}€`;
@@ -54,4 +55,4 @@ function calcularCambio(precio, dinero) {
         for (let i = 0; i < cantidadBilletesYMonedas.length; i++) {
             console.log(cantidadBilletesYMonedas[i]);
         }
-    }
+    } // -------------------------------------------------------------------------------------------------------------------------------------------------
