@@ -37,4 +37,3 @@ do {
 if (num == 0){
     console.log(`El número pensado es: ${numero}`);
 }
-console.log("FINAL");
