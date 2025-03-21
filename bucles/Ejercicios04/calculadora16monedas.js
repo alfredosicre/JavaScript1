@@ -24,8 +24,8 @@ do{
         cambio = cambio * 100; // veo los centimos totales que necesito de cambio
 //    
         // Calcular el número de monedas
-        for (let i = 0; i < cambio; i++) {
-            let cantidadMonedas = Math.floor(cambio);
+        for (let i = 0; i < cambio; i++) { // recorre todos los centimos
+            let cantidadMonedas = Math.floor(cambio); // me dice cuantos euros totales hay
             if (cantidadMonedas > 0) {
                 cambio -= cantidadMonedas * monedas;
             }
