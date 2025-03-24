@@ -37,9 +37,6 @@ console.log(`El ordenador dice: ${numero}`);
 //mostramos por pantalla.
 //if (num == 0){
 //    console.log(`El número pensado es: ${numero}`);
-<<<<<<< HEAD
 //}
-=======
 //}
 //console.log("FINAL");
->>>>>>> 4fe10bdc00cedf40e5a3b44c9504285a0566c880
