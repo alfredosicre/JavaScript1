@@ -10,15 +10,20 @@ main();
 
 function main(){ // ------------------------------------------------------
 let correcto = true;
-let precio = 0, dinero = 0, cambio = 0.0;
+let precio = 0, dinero = 0, cambio = 0.0, numero2decimales = 0;
     
 do{  
+console.log();
 precio = Number(read("Ingrese precio: "));
 dinero = Number(read("Ingrese dinero pagado: "));
 
 if(precio == 0){
-        correcto = false; // si salir = 1 sale del bucle
+        correcto = false;
         }else{
+        cambio = dinero - precio;
+        numero2decimales = cambio.toFixed(2);
+        console.log("Total cambio..: " + numero2decimales + "€");
+        console.log();
         calcularCambio(precio, dinero);
         console.log()
         }
