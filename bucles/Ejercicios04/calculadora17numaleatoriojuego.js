@@ -44,7 +44,7 @@ console.log(); // linea en blanco
 let numIngresado = []; // almacenamos los numeros ingresados para despues comparar con numeroSecreto
 let numSecreto01 = [];
 let numSecreto02 = 0, numIngresado02 = 0;
-numSecreto02 = generarNumeroSecreto(); // almacenamos el numero secreto en numSecreto01
+numSecreto02 = generarNumeroSecreto(); // almacenamos el numero secreto en numSecreto02
 console.log("El número generado por el ordenador es: " + "<" + numSecreto02 + ">");
 
 for (let i = 1; numSecreto02 != 0; i++){ // introduzco cada digito de numSecreto02 en la tabla numSecreto01
