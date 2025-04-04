@@ -26,7 +26,7 @@ function generarNumeroSecreto() {
         let digito = Math.floor(Math.random() * 10); // Un número entre 0 y 9
         if (!digitosUsados.has(digito)) { // (*) si el digito no esta presente en el set, entonces me añade digito a numeroSecreto
             numeroSecreto += digito; // El operador += concatena el digito al final de la cadena numeroSecreto. Es decir, el digito se va agregando uno tras otro para formar una cadena secreta.
-            digitosUsados.add(digito); // se añade digito al set digitosUsados
+            digitosUsados.add(digito); // se añade digito al set digitosUsados...
             
         }
     }
