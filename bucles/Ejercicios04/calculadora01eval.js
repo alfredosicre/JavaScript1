@@ -1,6 +1,6 @@
 // Para poder introducir información por teclado montamos el programa leer.js
 // const es una constante que no se puede variar
-const read = require('/home/node/leer.js');
+const read = require('/home/node/ALFREDO/JavaScript/leer.js');
 
 // Calculadora de 4 operaciones. El usuario ingresa dos números y un carácter (+, -, *, / ) y el
 // programa debe mostrar la operación y su resultado.
@@ -29,7 +29,39 @@ if (operacion == "/"){
 }
 
 process.stdout.write(`${num01} ${operacion} ${num02} = ${total}`);
-let oper = num01 + operacion + num02;
 
-console.log()
+let oper = num01 + operacion + num02;
+console.log();
+console.log(oper);
+let resul = eval(oper);
+console.log(`El resultado de la operación es: ${resul}`);
 console.log("FINAL");
+
+
+// si yo meto un operador mas y un numero mas ------------------------------------------------------------
+oper = resul;
+console.log(oper);
+
+let operacion2 = read("Ingrese tipo de operación (+, -, *, /): ");
+let num03 = Number(read("Ingrese el tercer número: "));
+let total2 = 0;
+
+if (operacion2 == "+"){
+        total2 = resul + num03;
+}
+if (operacion2 == "-"){
+        total2 = resul - num03;
+}
+if (operacion2 == "*"){
+        total2 = resul * num03;
+}
+if (operacion2 == "/"){
+        total2 = resul / num03;
+}
+process.stdout.write(`${resul} ${operacion2} ${num03} = ${total2}`);
+
+let oper2 = resul + operacion2 + num03;
+console.log();
+console.log(oper2);
+resul = eval(oper2);
+console.log(`El resultado de la operación es: ${resul}`);
