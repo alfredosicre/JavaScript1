@@ -1,6 +1,6 @@
 // Para poder introducir información por teclado montamos el programa leer.js
 // const es una constante que no se puede variar
-const read = require('../leer.js');
+const read = require('/home/node/ALFREDO/javaScript/leer.js');
 
 //Realizar un programa que adivine el número (entre 0 y 100) que ha pensado el usuario. En
 //cada paso, el programa propone un número y el usuario debe contestar, introduciendo su
@@ -33,12 +33,9 @@ do {
     
 } while (num != 0)
 
-//mostramos por pantalla.
+//mostramos por pantalla si es distinto de cero.
 if (num == 0){
     console.log(`El número pensado es: ${numero}`);
-<<<<<<< HEAD
 }
-=======
-}
+// =======
 console.log("FINAL");
->>>>>>> 4fe10bdc00cedf40e5a3b44c9504285a0566c880

@@ -1,6 +1,6 @@
 // Para poder introducir información por teclado montamos el programa leer.js
 // const es una constante que no se puede variar
-const read = require('../leer.js');
+const read = require('/home/node/ALFREDO/javaScript/leer.js');
 
 // Dado un número indefinido de notas obtenidas por alumnos en sus exámenes, mostrar por
 // pantalla la nota mayor. (Cuando el usuario ingrese -1 finaliza la carga)

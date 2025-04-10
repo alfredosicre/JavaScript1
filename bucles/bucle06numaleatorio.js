@@ -1,6 +1,6 @@
 // Para poder introducir información por teclado montamos el programa leer.js
 // const es una constante que no se puede variar
-const read = require('../leer.js');
+const read = require('/home/node/ALFREDO/javaScript/leer.js');
 
 //El programa generará un número aleatorio entre 0 y 100 y le pedirá al usuario que lo
 //adivine. Cuando el usuario ingrese el número para ver si acertó, el programa le indicará si
