@@ -1,6 +1,6 @@
 // Para poder introducir información por teclado montamos el programa leer.js
 // const es una constante que no se puede variar
-const read = require('/home/node/leer.js');
+const read = require('/home/node/ALFREDO/javaScript/leer.js');
 
 //Escriba un programa que nos calcule el cambio que debe dar la caja de un supermercado:
 //Dado un precio y una cantidad de dinero, el programa nos dirá cuántas monedas deben
